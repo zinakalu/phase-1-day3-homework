@@ -1,5 +1,5 @@
 //TODO: Look at the HTML and see what id you need to access
-const catContainer = document.getElementById("cat-container")
+
 //TODO: Open your json server
 //! If you need to a refresher on this, the command for this is
 //! pineed to the slack channel
