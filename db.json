@@ -1,0 +1,36 @@
+{
+    "cats": [
+        {
+            "name": "Puffy",
+            "image": "http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcS7doMt2tKaUzd8YdXlqTvGrFQOv4OVjtY0DRD12KLdbPTxGuBHxiyZC38iNkIKn8psrwWdSUPlwdroJkw",
+            "breed": "Siamese"
+        },
+        {
+            "name": "Lucky",
+            "image": "https://www.vetstreet.com/wp-content/uploads/2022/09/view-pet-portrait-cat-mammal-close-843475-pxhere.com-1.jpg",
+            "breed": "Persian"
+        },
+        {
+            "name": "Pinky",
+            "image": "https://www.purina.co.uk/sites/default/files/2021-02/CAT%20HERO_0026_Sphynx.jpg",
+            "breed": "Sphynx"
+        }
+    ],
+    "dogs": [
+        {
+            "name": "Carlito",
+            "image": "https://a-z-animals.com/media/Poodle-Canis-familiaris-white.jpg",
+            "breed": "Poodle"
+        },
+        {
+            "name": "Leeto",
+            "image": "https://t1.ea.ltmcdn.com/en/posts/4/0/9/10_things_you_should_know_about_golden_retrievers_904_600.jpg",
+            "breed": "Golden Retriever"
+        },
+        {
+            "name": "Snoopy",
+            "image": "https://www.ellevetsciences.com/wp-content/uploads/2022/04/EV_BLOG_FrenchBullDogs_Header.jpg",
+            "breed": "French Bulldog"
+        }
+    ]
+}

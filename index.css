@@ -1,0 +1,26 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0 auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#cat-container{
+    display: flex;
+    flex-direction: row;
+}
+#cat-container div{
+    margin-right: 10%;
+}
+#dog-container{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+}
+#dog-container div{
+    margin-right: 10%;
+}
