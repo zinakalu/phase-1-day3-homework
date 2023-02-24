@@ -33,48 +33,45 @@ detailImage.src = data.image
 })
 
 })
-
-async function fetchDogs(){
-let response = await fetch("http://localhost:3000/dogs")
-let data = await response.json()
-data.forEach(data => {
-const div = document.createElement("div")
-dogContainer.append(div)
-const h3 = document.createElement("h3")
-const img = document.createElement("img")
-const p = document.createElement("p")
-div.append(h3, img, p)
-h3.innerText = data.name
-img.src = data.image
-p.innerText = data.breed
-})
-}
-fetchDogs()
-
-
-
-
-
-
-
-
-
-
 //////////////////////////////////////////////////////////////
 //TODO: Fetch again and repeat to add dogs to the "dog-container"
 //////////////////////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+async function fetchDogs(){
+    let response = await fetch("http://localhost:3000/dogs")
+    let data = await response.json()
+    data.forEach(data => {
+    const div = document.createElement("div")
+    dogContainer.append(div)
+    const h3 = document.createElement("h3")
+    const img = document.createElement("img")
+    const p = document.createElement("p")
+    div.append(h3, img, p)
+    h3.innerText = data.name
+    img.src = data.image
+    p.innerText = data.breed
+    })
+    }
+    fetchDogs()
 //////////////////////////////////////////////////////////////
+const catForm = document.getElementById("cat-form")
+const catName = document.getElementById("cat-name")
+const catImage = document.getElementById("cat-image")
+const catBreed = document.getElementById("cat-breed")
+
+catForm.addEventListener("submit", (e)=>{
+e.preventDefault()
+fetch("http://localhost:3000/cats", {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+    "name": catName.value,
+    "image": catImage.value,
+    "breed": catBreed.value
+    })
+})
+.then(response => response.json())
+.then(data => console.log(data))
+})
